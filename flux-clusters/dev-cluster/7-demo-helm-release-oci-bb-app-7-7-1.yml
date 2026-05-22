@@ -11,13 +11,11 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: 7-demo-source-oci-helm-bb-app-7-7-1
+        name: 7-demo-source-oci-helm-bb-app-7-7-
       version: 7.7.1
   install:
     createNamespace: true
   interval: 1m0s
-  storageNamespace: 7-demo
-  targetNamespace: 7-demo
   values:
     labels:
       app:
